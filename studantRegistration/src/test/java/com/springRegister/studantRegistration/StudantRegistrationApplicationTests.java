@@ -1,10 +1,10 @@
-package com.springexercise.student.registration;
+package com.springRegister.studantRegistration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StudentRegistrationApplicationTests {
+class StudantRegistrationApplicationTests {
 
 	@Test
 	void contextLoads() {

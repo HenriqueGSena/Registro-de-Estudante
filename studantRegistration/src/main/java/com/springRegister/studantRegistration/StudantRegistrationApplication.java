@@ -1,13 +1,13 @@
-package com.springexercise.student.registration;
+package com.springRegister.studantRegistration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StudentRegistrationApplication {
+public class StudantRegistrationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StudentRegistrationApplication.class, args);
+		SpringApplication.run(StudantRegistrationApplication.class, args);
 	}
 
 }
