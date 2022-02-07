@@ -2,7 +2,7 @@ package com.springRegister.studantRegistration.studant;
 
 import java.time.LocalDate;
 
-public class studant {
+public class Studant {
     
     private Long id;
     private String name;
@@ -11,10 +11,10 @@ public class studant {
     private Integer age;
 
 
-    public studant() {
+    public Studant() {
     }
 
-    public studant(Long id, String name, String email, LocalDate dob, Integer age) {
+    public Studant(Long id, String name, String email, LocalDate dob, Integer age) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -22,7 +22,7 @@ public class studant {
         this.age = age;
     }
     
-    public studant(String name, String email, LocalDate dob, Integer age) {
+    public Studant(String name, String email, LocalDate dob, Integer age) {
         this.name = name;
         this.email = email;
         this.dob = dob;
