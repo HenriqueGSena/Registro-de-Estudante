@@ -4,16 +4,16 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 
-import com.springRegister.studantRegistration.studant.Studant;
+import com.springRegister.studantRegistration.student.Student;
 
 import org.springframework.stereotype.Service;
 
 @Service
-public class StudantService {
+public class StudentService {
     
-    public List<Studant> getStudants() {
+    public List<Student> getStudents() {
         return List.of(
-            new Studant(
+            new Student(
                 1L,
                 "Mariam",
                 "mariam.jamal@gmail.com",

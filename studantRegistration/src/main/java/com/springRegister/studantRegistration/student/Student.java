@@ -1,4 +1,4 @@
-package com.springRegister.studantRegistration.studant;
+package com.springRegister.studantRegistration.student;
 
 import java.time.LocalDate;
 
@@ -11,17 +11,17 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Studant {
+public class Student {
     
     @Id
     @SequenceGenerator(
-        name = "studant_sequence",
-        sequenceName = "studant_sequence",
+        name = "student_sequence",
+        sequenceName = "student_sequence",
         allocationSize = 1
     )
     @GeneratedValue(
         strategy = GenerationType.SEQUENCE,
-        generator = "studant_sequence"
+        generator = "student_sequence"
     )
     private Long id;
     private String name;
@@ -30,10 +30,10 @@ public class Studant {
     private Integer age;
 
 
-    public Studant() {
+    public Student() {
     }
 
-    public Studant(Long id, String name, String email, LocalDate dob, Integer age) {
+    public Student(Long id, String name, String email, LocalDate dob, Integer age) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -41,7 +41,7 @@ public class Studant {
         this.age = age;
     }
     
-    public Studant(String name, String email, LocalDate dob, Integer age) {
+    public Student(String name, String email, LocalDate dob, Integer age) {
         this.name = name;
         this.email = email;
         this.dob = dob;
