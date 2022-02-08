@@ -29,7 +29,7 @@ public class StudentController {
         return studentService.getStudents();
     }
 
-    @PostMapping("/registration")
+    @PostMapping
     public void registerNewStudent(@RequestBody Student student) {
 
         studentService.addNewStudent(student);

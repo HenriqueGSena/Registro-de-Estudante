@@ -1,6 +1,7 @@
 package com.springRegister.studantRegistration.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.springRegister.studantRegistration.repository.StudentRepository;
 import com.springRegister.studantRegistration.student.Student;
@@ -27,6 +28,11 @@ public class StudentService {
 
     public void addNewStudent(Student student) {
 
-        System.out.println(student);
+        Optional<Student> studentOptional = studentRepository.findStudentByEmail(student.getEmail());
+
+        if (studentOptional.isPresent()) {
+            throw new IllegalStateException("email taken");
+        }
+        studentRepository.save(student);
     }
 }
