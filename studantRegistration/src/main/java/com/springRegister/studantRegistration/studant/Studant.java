@@ -2,8 +2,27 @@ package com.springRegister.studantRegistration.studant;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class Studant {
     
+    @Id
+    @SequenceGenerator(
+        name = "studant_sequence",
+        sequenceName = "studant_sequence",
+        allocationSize = 1
+    )
+    @GeneratedValue(
+        strategy = GenerationType.SEQUENCE,
+        generator = "studant_sequence"
+    )
     private Long id;
     private String name;
     private String email;
