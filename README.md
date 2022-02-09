@@ -2,14 +2,14 @@
 
 A ideia do projeto e fazer um registo de estudantes em um sistema, para isso foi desenvolvido uma api para ser feito todo o registro com os metodos listar, adicionar, atualizar, deletar (Get, Post, Put, Delete).
 
-# Tecnologias utilizadas
+## Tecnologias utilizadas
 
 * Java
 * Spring Boot
 * PostgreSql
 * Postman
 
-# Dependecias da Aplicação
+## Dependências da Aplicação
 
 <dependencies>
 		<dependency>
