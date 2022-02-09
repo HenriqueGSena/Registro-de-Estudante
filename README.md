@@ -4,7 +4,7 @@ A ideia do projeto e fazer um registo de estudantes em um sistema, para isso foi
 
 ## Tecnologias utilizadas
 
-* Java
+* Java 17
 * Spring Boot
 * PostgreSql
 * Postman
